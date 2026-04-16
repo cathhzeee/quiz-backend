@@ -1,9 +1,3 @@
-/**
- * mask the user's name
- * example: John Doe -> J**n D*e
- * @param {string} name
- * @returns {string}
- */
 function maskName(name) {
   if (!name) return '';
 

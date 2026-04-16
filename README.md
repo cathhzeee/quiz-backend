@@ -16,3 +16,26 @@
 2. Create a new folder in `./src/api/components` (if needed). Remember to separate your codes to repositories, services, controllers, and routes.
 3. Add the new route in `./src/api/routes.js`.
 4. Test your new endpoints in the API client app.
+
+
+## Penjelasan tentang endpoint yang dapat diakses beserta parameter / input yang diperlukan
+
+1. POST localhost:5050/api/gacha
+   Input: userId
+   {
+   "userId": " "
+   }
+
+  Response:
+
+  - Win → { message, prize }
+  - Lose → { message }
+
+2. GET localhost:5050/api/gacha/history/:userId
+   Untuk melihat history gacha yang dilakukan oleh user
+
+3. GET localhost:5050/api/prizes
+   Untuk melihat list hadiah yang tersedia beserta dengan kuotanya
+
+4. GET localhost:5050/api/winners
+   Untuk melihat pemenang dimana namanya pemenang telah di-masked

@@ -68,7 +68,7 @@ module.exports = (app) => {
   });
 
   // history gacha - bonus 1
-  app.get('/gacha/history/:userId', async (req, res) => {
+  app.get('/history/:userId', async (req, res) => {
     const logs = await GachaLog.find({ userId: req.params.userId });
 
     res.json(logs);
